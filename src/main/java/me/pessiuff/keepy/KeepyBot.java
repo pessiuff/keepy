@@ -1,7 +1,7 @@
 package me.pessiuff.keepy;
 
 import lombok.Getter;
-import me.pessiuff.keepy.commands.PingCommand;
+import me.pessiuff.keepy.commands.BalanceCommand;
 import me.pessiuff.keepy.config.BotConfig;
 import me.pessiuff.keepy.listeners.SlashCommandListener;
 import me.pessiuff.keepy.manager.CommandManager;
@@ -11,8 +11,6 @@ import org.javacord.api.entity.server.Server;
 import org.javacord.api.util.logging.FallbackLoggerConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-// TODO: implement options to command manager
 
 public class KeepyBot {
     @Getter
@@ -47,7 +45,7 @@ public class KeepyBot {
         }
         developmentServer = api.getServerById(botConfig.getDeveloperGuildId()).get();
 
-        commandManager.addCommand(new PingCommand());
+        commandManager.addCommand(new BalanceCommand());
         commandManager.registerAll();
 
         api.addSlashCommandCreateListener(new SlashCommandListener());

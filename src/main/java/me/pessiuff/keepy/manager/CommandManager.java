@@ -36,6 +36,7 @@ public class CommandManager {
                 new SlashCommandBuilder()
                         .setName(command.getName())
                         .setDescription(command.getDescription())
+                        .setOptions(command.getOptions())
         ));
 
         KeepyBot.getApi().bulkOverwriteServerApplicationCommands(KeepyBot.getDevelopmentServer(), builders);

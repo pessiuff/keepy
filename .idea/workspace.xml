@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c318e72c-0f54-428a-afa2-6381e430e126" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/KeepyBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/BaseCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/PingCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/config/BotConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/listeners/SlashCommandListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/CommandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+    <list default="true" id="c318e72c-0f54-428a-afa2-6381e430e126" name="Changes" comment="Initial commit.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/BalanceCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/KeepyBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/KeepyBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/BaseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/BaseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/PingCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/CommandManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +27,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pessiuff&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pessiuff/keepy.git&quot;,
+    &quot;accountId&quot;: &quot;8f8cfcb1-245f-4aea-92a7-7ae44eb70324&quot;
+  }
+}</component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2hyRtkziKaPPdEGj3q7j0eITAe1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,10 +57,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.KeepyBot.executor": "Debug",
+    "Application.Unnamed.executor": "Debug",
     "Maven.keepy [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,7 +75,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="KeepyBot" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.pessiuff.keepy.KeepyBot" />
       <module name="keepy" />
       <method v="2">
@@ -83,11 +99,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718557375403</updated>
-      <workItem from="1718557376261" duration="3762000" />
+      <workItem from="1718557376261" duration="6001000" />
+      <workItem from="1718564552062" duration="615000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <option name="closed" value="true" />
+      <created>1718561377525</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718561377525</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
   </component>
 </project>
