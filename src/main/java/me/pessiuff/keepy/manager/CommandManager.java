@@ -40,5 +40,7 @@ public class CommandManager {
         ));
 
         KeepyBot.getApi().bulkOverwriteServerApplicationCommands(KeepyBot.getDevelopmentServer(), builders);
+
+        KeepyBot.getLogger().info("{} command has been registered.", registeredCommands.size());
     }
 }

@@ -21,6 +21,8 @@ public class BotConfig {
             return false;
         }
 
+        KeepyBot.getLogger().info("Bot config has loaded.");
+
         return true;
     }
 }

@@ -1,5 +1,6 @@
 package me.pessiuff.keepy.commands;
 
+import me.pessiuff.keepy.KeepyBot;
 import org.javacord.api.entity.message.MessageFlag;
 import org.javacord.api.entity.user.User;
 import org.javacord.api.interaction.SlashCommandInteraction;
@@ -40,7 +41,7 @@ public class BalanceCommand implements BaseCommand {
         }
 
         interaction.createImmediateResponder()
-                .setContent(String.format("```You are checking %s's balance.```", targetUser.getDiscriminatedName()))
+                .setContent(String.format("```Balance of %s: %s```", targetUser.getDiscriminatedName(), KeepyBot.getDatabaseManager().getBalance(targetUser)))
                 .setFlags(MessageFlag.EPHEMERAL)
                 .respond();
     }
