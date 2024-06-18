@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c318e72c-0f54-428a-afa2-6381e430e126" name="Changes" comment="Implemented database.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/config/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/KeepyBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/KeepyBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/BalanceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/commands/BalanceCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/config/BotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/config/BotConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pessiuff/keepy/manager/DatabaseManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +96,9 @@
       <updated>1718557375403</updated>
       <workItem from="1718557376261" duration="6001000" />
       <workItem from="1718564552062" duration="909000" />
-      <workItem from="1718570120191" duration="5321000" />
+      <workItem from="1718570120191" duration="6108000" />
+      <workItem from="1718678814334" duration="42000" />
+      <workItem from="1718678871427" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -120,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718565306456</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented database.">
+      <option name="closed" value="true" />
+      <created>1718575480963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718575480964</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

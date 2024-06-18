@@ -15,8 +15,6 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-// TODO: fix shit code
-
 @Getter
 public class DatabaseManager {
     private final DatabaseConfig databaseConfig;
@@ -55,27 +53,24 @@ public class DatabaseManager {
         return true;
     }
 
-    private boolean registerToDatabase(final User user) {
+    private void registerToDatabase(final User user) {
         final CompletableFuture<QueryResult> resultFuture = databaseConnection.sendPreparedStatement(String.format("INSERT INTO economy VALUES (%s, 0)", user.getId()));
         final QueryResult result;
         try {
             result = resultFuture.get();
         } catch (InterruptedException | ExecutionException e) {
             KeepyBot.getLogger().error("There was a problem while registering a user to database.");
-            return false;
         }
-
-        return true;
     }
 
-    public double getBalance(final User user) {
+    public RowData getUserData(final User user) {
         final CompletableFuture<QueryResult> resultFuture = databaseConnection.sendPreparedStatement(String.format("SELECT * FROM economy WHERE id='%s'", user.getId()));
         final QueryResult result;
         try {
             result = resultFuture.get();
         } catch (InterruptedException | ExecutionException e) {
             KeepyBot.getLogger().error("There was a problem while requesting balance data from database.");
-            return 0;
+            return null;
         }
 
         final RowData userData;
@@ -83,8 +78,15 @@ public class DatabaseManager {
             userData = result.getRows().getFirst();
         } catch (NoSuchElementException e) {
             registerToDatabase(user);
-            return 0;
+            return null;
         }
+
+        return userData;
+    }
+
+    public double getBalance(final User user) {
+        final RowData userData = getUserData(user);
+        if (userData == null) return 0.0;
 
         final Double balance = userData.getDouble("balance");
 

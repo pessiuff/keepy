@@ -13,31 +13,16 @@ import org.javacord.api.entity.server.Server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.concurrent.ExecutionException;
-
 public class KeepyBot {
-    @Getter
-    private static final Logger logger = LoggerFactory.getLogger(KeepyBot.class);
-
-    @Getter
+    @Getter private static final Logger logger = LoggerFactory.getLogger(KeepyBot.class);
     private static final BotConfig botConfig = new BotConfig();
-
-    @Getter
     private static final DatabaseConfig databaseConfig = new DatabaseConfig();
+    @Getter private static DatabaseManager databaseManager;
+    @Getter private static DiscordApi api;
+    @Getter private static Server developmentServer;
+    @Getter private static final CommandManager commandManager = new CommandManager();
 
-    @Getter
-    private static DatabaseManager databaseManager;
-
-    @Getter
-    private static DiscordApi api;
-
-    @Getter
-    private static Server developmentServer;
-
-    @Getter
-    private static final CommandManager commandManager = new CommandManager();
-
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
+    public static void main(String[] args) {
         if (!botConfig.load()) return; // try to load the bot config from environment variables
         if (!databaseConfig.load()) return; // try to load database config from db-config.toml
 
@@ -62,7 +47,5 @@ public class KeepyBot {
         commandManager.registerAll();
 
         api.addSlashCommandCreateListener(new SlashCommandListener());
-
-
     }
 }
